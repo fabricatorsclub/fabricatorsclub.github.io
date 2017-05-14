@@ -38,6 +38,7 @@ document.querySelector('.submitBtn').addEventListener(
           currentDesignation: document.querySelector('#currentDesignation')
             .value,
           distruptIndustry: document.querySelector('#distruptIndustry').value,
+          whyThisSpace: document.querySelector('#whyThisSpace').value,
         },
         knowUser: {
           name: document.querySelector('#name').value,
@@ -66,6 +67,8 @@ function contactHtmlFromObject(survey) {
     'current Designation : ' + survey.knowPassion.currentDesignation + '<br/>';
   html +=
     'Distrupt Industry : ' + survey.knowPassion.distruptIndustry + '<br/>';
+  html +=
+    'Will be interested to : ' + survey.knowPassion.whyThisSpace + '<br/>';
   html += 'Name : ' + survey.knowUser.name + '<br/>';
   html += 'Age : ' + survey.knowUser.age + '<br/>';
   html += 'Gender : ' + survey.knowUser.gender + '<br/>';
